@@ -63,6 +63,14 @@ img{
     box-shadow: -6px 6px 0 0 var(--color-brand2);
 }
 
+.interest img {
+    transition: transform 0.3s ease;
+}
+
+.interest img:hover {
+    transform: scale(1.05);
+}
+
 .iconbox{
     width: 60px;
     height: 60px;
@@ -122,4 +130,71 @@ img{
     background-color: var(--color-brand2);
     color: var(--color-base);
     border-color: var(--color-brand2);
+}
+
+.progress{
+    background-color: #eb5e60;
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 75%;
+}
+
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: #000000;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: #000000;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: #000000;
+    height: 25px;
+    width: 0;
+}
+
+.progress p{
+    color: white;
+    padding: 3px 12px;
+}
+
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 45%;
+    }
+}
+
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 25%;
+    }
 }

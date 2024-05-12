@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root {
-    --color-body: #fff;
-    --color-heading: #000000;
-    --color-base: #95c3f5;
-    --color-base2: #87e6f7;
-    --color-brand: #eb5e60;
-    --color-brand2: #a52f57;
+    --color-body: #ffffff;
+    --color-heading: #ffffff;
+    --color-base: #eb8755;
+    --color-brand2: #ea5c15;
+    --color-brand: rgb(235, 135, 85);
+    --color-base2: #eeb8a1;
     --sidbar-width: 240px;
     ---font-base: "Oswald";
 }
@@ -37,11 +37,14 @@ img{
 }
 
 .text-brand{
-    color: var(--color-brand);
+    color: var(--color-brand2);
 }
 
 .bg-base{
     background-color: var(--color-brand);
+    width: 65%;
+    height: 100%;
+    margin: auto;
 }
 
 .full-height{
@@ -93,20 +96,20 @@ img{
 }
 
 .navbar .nav-item .nav-link:hover{
-    color: var(--color-brand);
+    color: var(--color-brand2);
 }
 
 @media (min-width: 992px){
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(108, 168, 231, 0.8), rgba(108, 168, 231, 0.8)), url(../images/other/sidebar-img.png);
+        background: linear-gradient(rgba(235, 135, 85, 0.8), rgba(255, 255, 255, 0.8)), url(../images/sidebar-img.png);
         background-size: cover;
         background-position: center;
     }
 
     .navbar-brand img{
-        border: 5px solid var(--color-brand);
+        border: 5px solid var(--color-body);
     }
 
     #content-wrapper{
@@ -121,19 +124,19 @@ img{
 }
 
 .btn-brand{
-    background-color: var(--color-brand);
+    background-color: var(--color-base);
     border-color: var(--color-brand);
-    color: var(--color-base);
+    color: var(--color-body);
 }
 
 .btn-brand:hover, .btn-brand:focus{
     background-color: var(--color-brand2);
-    color: var(--color-base);
-    border-color: var(--color-brand2);
+    color: var(--color-body);
+    border-color: var(--color-brand);
 }
 
 .progress{
-    background-color: #eb5e60;
+    background-color: var(--color-base);
     justify-content: flex-start;
     border-radius: 50px;
     align-items: center;
@@ -146,7 +149,7 @@ img{
 .pro-value1{
     animation: load1 3s normal forwards;
     border-radius: 50px;
-    background-color: #000000;
+    background-color: var(--color-brand2);
     height: 25px;
     width: 0;
 }
@@ -154,7 +157,7 @@ img{
 .pro-value2{
     animation: load2 3s normal forwards;
     border-radius: 50px;
-    background-color: #000000;
+    background-color: var(--color-brand2);
     height: 25px;
     width: 0;
 }
@@ -162,7 +165,7 @@ img{
 .pro-value3{
     animation: load3 3s normal forwards;
     border-radius: 50px;
-    background-color: #000000;
+    background-color: var(--color-brand2);
     height: 25px;
     width: 0;
 }

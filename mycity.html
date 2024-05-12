@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-column">
+          <a class="navbar-brand mb-lg-4" href="index.html">
+            <span class="h3 font-weight-bold d-block d-lg-none">Ahmet Görkem Yavuz</span>
+            <img src="../images/ahmetgörkem.jpg" class="d-none d-lg-block rounded-circle">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">Hakkýmda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Özgeçmiþ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper">
+
+        <section id="mycity" class="full-height px-lg-5">
+            <div class="city-info px-5 py-5">
+                <h2 class="text-brand mb-4">Sakarya Hakkýnda</h2>
+                <p>Sakarya, Türkiye'nin Marmara Bölgesi'nde yer alan bir il. Doðusunda Kocaeli ve Bilecik, batýsýnda Bursa, kuzeyinde Kocaeli ve Düzce, güneyinde ise Bilecik ve Bolu illeriyle komþudur.</p>
+                Sakarya ili, Marmara Bölgesi'nin iç kesimlerinde, Sakarya Nehri'nin deltasi üzerine kurulmuþtur. Sakarya, tarihi, kültürel ve doðal güzellikleriyle ön plana çýkar. Yemyeþil doðasý, tarihi mekanlarý ve göz alýcý manzaralarýyla ziyaretçilerini büyüler.
+                <ul class="mt-4">
+                    <li>Nüfus: 1.098.115</li>
+                </ul>
+            </div>
+
+            <div id="carouselExampleCaptions" class="carousel slide" style="width: 90%; margin: auto;">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <a href="#serdivan">
+                        <img src="images/serdivan.jpeg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Serdivan</h5>
+                      <p>Yamaç paraþütü, uçmanýn belki en kolay yolu ama biz onu sadace bunun için sevmiyoruz. Ayný zaman da uçmanýn en güzel yolu.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src="images/sapanca.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Sapanca</h5>
+                      <p>Sapanca Gölü ve çevresi, hafta sonu tatili baþta olmak üzere, tatillerini Sapanca’da geçirmek isteyenlerin bir numaralý adresidir. </p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="images/beþköprü.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Beþköprü</h5>
+                      <p>Sakarya’nýn Serdivan ilçesinde yakýndan görebileceðiniz tarihi hazinlerden biri olan Beþköprü (Justinianos Köprüsü), Geç Roma Dönemi’nde inþa edilmiþ ve günümüze kadar saðlam kalmayý baþarmýþ etkileyici bir mimari eser.</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="images/taraklý.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Taraklý</h5>
+                      <p>Ülkece sakin kent unvanýna sahip Taraklýnýn sunduðu tarihi yapý ve yemyeþil doðal güzelliklere; Osmanlý kent dokusuna sahip sokaklarýnda dilediðinizce yürüyerek ve her birini ayrý ayrý inceleyerek eriþebilirsiniz.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section id="serdivan" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <h3>Sakarya Serdivan Tepesi</h3>
+                    <p>230 Metre</p>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Your custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>

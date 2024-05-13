@@ -58,6 +58,35 @@ img{
     border-bottom: 2px solid rgba(255,255,255, 0.1);
 }
 
+.city-info {
+    background: url('../images/sakarya-map.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.city-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.city-info > * {
+    position: relative;
+    z-index: 2;
+}
+
 .shadow-effect{
     transition: all 0.5s;
 }

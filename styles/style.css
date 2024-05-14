@@ -5,16 +5,15 @@
     --color-heading: #ffffff;
     --color-base: #eb8755;
     --color-brand2: #ea5c15;
-    --color-brand: rgb(235, 135, 85);
+    --color-brand: #eb8755;
     --color-base2: #eeb8a1;
     --sidbar-width: 240px;
-    ---font-base: "Oswald";
 }
 
 body{
     background-color: var(--color-base2);
     color: var(--color-body);
-    font-family: var(---font-base), sans-serif;
+    font-family: "Oswald"
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -87,6 +86,24 @@ img{
     z-index: 2;
 }
 
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-container img {
+    transition: transform 0.3s ease;
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+
 .shadow-effect{
     transition: all 0.5s;
 }
@@ -132,7 +149,7 @@ img{
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(235, 135, 85, 0.8), rgba(255, 255, 255, 0.8)), url(../images/sidebar-img.png);
+        background: linear-gradient(rgba(235, 135, 85, 0.8), rgba(238, 184, 161, 0.8), rgba(255, 255, 255, 0.8)), url(../images/sidebar-img.png);
         background-size: cover;
         background-position: center;
     }

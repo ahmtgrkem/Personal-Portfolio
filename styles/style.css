@@ -104,6 +104,51 @@ img{
     border-radius: 15px;
 }
 
+.card-background {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.card-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.card-background .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+.card-background .list-group-item {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.position-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.scrollspy-example {
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+
 .shadow-effect{
     transition: all 0.5s;
 }
@@ -149,7 +194,7 @@ img{
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(235, 135, 85, 0.8), rgba(238, 184, 161, 0.8), rgba(255, 255, 255, 0.8)), url(../images/sidebar-img.png);
+        background: linear-gradient(rgba(235, 135, 85, 0.8), rgba(238, 184, 161, 0.8), rgba(0, 0, 0, 0.8)), url(../images/sidebar-img.png);
         background-size: cover;
         background-position: center;
     }

@@ -1,8 +1,8 @@
 // script.js
 
-// API'den en iyi 6 film verisini almak için bir fonksiyon
+// API'den en iyi 6 film verisini almak iÃ§in bir fonksiyon
 async function getTopRatedMovies() {
-    const apiKey = 'd28c03d8a3050757c96c23c503166ee8'; // Kendi API anahtarınızı buraya ekleyin
+    const apiKey = 'MY_API'; // Kendi API anahtarÃ½nÃ½zÃ½ buraya ekleyin
     const apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=tr&page=1`;
 
     try {
@@ -57,5 +57,5 @@ function createMovieElement(movie) {
     return movieElement;
 }
 
-// Sayfa yüklendiğinde film listesini çağır
+// Sayfa yÃ¼klendiÃ°inde film listesini Ã§aÃ°Ã½r
 document.addEventListener('DOMContentLoaded', addMoviesToPage);

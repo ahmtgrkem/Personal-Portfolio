@@ -15,9 +15,9 @@
     <!-- Header Section -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container flex-column">
-          <a class="navbar-brand mb-lg-4" href="index.html">
+          <a class="navbar-brand mb-lg-4" href="login.html">
             <span class="h3 font-weight-bold d-block d-lg-none">Ahmet Görkem Yavuz</span>
-            <img src="/images/ahmetgorkem.jpg" class="d-none d-lg-block rounded-circle">
+            <img src="./images/ahmetgorkem.jpg" class="d-none d-lg-block rounded-circle">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="about.html">Hakkýmda</a>
+                <a class="nav-link" href="index.html">Hakkýmda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Özgeçmiþ</a>
@@ -36,18 +36,32 @@
               <li class="nav-item">
                 <a class="nav-link" href="myteam.html">Takýmýmýz</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="interest.html">Ýlgi Alanlarým</a>
+              </li>
             </ul>
           </div>
         </div>
     </nav>
-
     <!-- Resume Section -->
     <div id="content-wrapper">
-
         <section id="resume" class="full-height px-lg-5">
             <div class="container">
-                <div class="row">
-                    <h1 class="text-brand p-4 mt-4">Özgeçmiþim</h1>
+                <div class="row mt-5">
+                    <h1>Ahmet Görkem Yavuz</h1>
+                    <p class="lead">Sakarya Üniversitesi Bilgisayar Mühendisliði öðrencisi</p>
+                    <p class="ps-4">
+                        <i class="bi bi-geo-alt-fill" style="color: var(--color-brand2);"></i>
+                        Sakarya, Serdivan
+                    </p>
+                    <p class="ps-4">
+                        <i class="bi bi-envelope-fill" style="color: var(--color-brand2);"></i>
+                        Email: <a href="mailto:ahmetg.yavuz11@gmail.com">ahmetg.yavuz11@gmail.com</a>
+                    </p>
+                    <p class="ps-4">
+                        <i class="bi bi-telephone-fill" style="color: var(--color-brand2);"></i>
+                        Telefon: 0 530 649 09 54
+                    </p>
                 </div>
                 <article>
                     <h3 class="mb-4">Eðitim</h3>
@@ -64,26 +78,40 @@
                 </article>
                 <article>
                     <h3 class="mb-4">Becerilerim</h3>
-                    <div class="progress mb-2">
+                    <div class="progress mb-3">
                         <div class="pro-value1">
                             <p>C++ <span class="text-white float-end">30%</span></p>
                         </div>
                     </div>
-                    <div class="progress mb-2">
+                    <div class="progress mb-3">
                         <div class="pro-value2">
                             <p>C# <span class="text-white float-end">45%</span></p>
                         </div>
                     </div>
-                    <div class="progress mb-2">
+                    <div class="progress mb-3">
                         <div class="pro-value3">
                             <p>HTML / CSS<span class="text-white float-end">25%</span></p>
                         </div>
                     </div>
                 </article>
+                <article>
+                    <h3 class="mt-4">Projelerim</h3>
+                    <p>
+                        Tüm projelerim GitHub profilimde bulunmaktadýr.
+                    </p>
+                    <a href="https://github.com/ahmtgrkem" target="_blank" class="btn btn-dark">
+                        <i class="bi bi-github"></i> ahmtgrkem
+                    </a>
+                </article>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-auto">
+                        <a href="source/CV.pdf" download="CV_Ahmet_Gorkem_Yavuz.pdf" class="btn btn-brand">
+                            <i class="bi bi-file-earmark-arrow-down-fill"></i> CV Ýndir
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
-
-        
     </div>
     <!-- Footer Section -->
     <footer>

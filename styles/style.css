@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@font-face {
+    font-family: "Oswald";
+    src: url(../source/Oswald-VariableFont_wght.ttf);
+}
 
 :root {
     --color-body: #ffffff;
@@ -13,7 +16,7 @@
 body{
     background-color: var(--color-base2);
     color: var(--color-body);
-    font-family: "Oswald"
+    font-family: "Oswald";
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -134,6 +137,25 @@ img{
     border: none;
     border-radius: 10px;
     margin: 5px;
+}
+
+.quote-card {
+    border-left: 5px solid var(--color-brand2);
+    background-color: var(--color-base);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.quote-text {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.quote-author {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .position-sticky {

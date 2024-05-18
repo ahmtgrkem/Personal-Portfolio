@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('form').onsubmit = validateForm;
 });
 
-function formKontrol() {
+function formKon() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const genderMale = document.getElementById('genderMale').checked;
@@ -119,7 +119,7 @@ const app = Vue.createApp({
         };
     },
     methods: {
-        formKontrol() {
+        validateForm() {
             if (!this.name) {
                 alert('Lütfen adýnýzý girin.');
                 return false;

@@ -30,7 +30,7 @@ async function AlintiyiGoster() {
 document.addEventListener('DOMContentLoaded', AlintiyiGoster);
 
 // Login
-function validateForm() {
+function girisFormKontrol() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('form').onsubmit = validateForm;
 });
 
-function formKon() {
+function formKontrol() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const genderMale = document.getElementById('genderMale').checked;
@@ -119,7 +119,7 @@ const app = Vue.createApp({
         };
     },
     methods: {
-        validateForm() {
+        formKontrol() {
             if (!this.name) {
                 alert('Lütfen adýnýzý girin.');
                 return false;

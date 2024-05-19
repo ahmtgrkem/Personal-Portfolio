@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Oswald";
-    src: url(../source/Oswald-VariableFont_wght.ttf);
+    src: url(../styles/Oswald-VariableFont_wght.ttf);
+    font-style: normal;
+    unicode-range: U+0000-00FF, U+0100-024F, U+1E00-1EFF, U+20A0-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 
 :root {
@@ -16,7 +18,7 @@
 body{
     background-color: var(--color-base2);
     color: var(--color-body);
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{

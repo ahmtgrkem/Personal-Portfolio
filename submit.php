@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <!-- Bootstrap CSS -->
@@ -12,13 +12,13 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h2 class="mb-4">Gönderilen Form Bilgileri</h2>
+        <h2 class="mb-4">GÃ¶nderilen Form Bilgileri</h2>
         <div class="row">
             <div class="col-md-6">
-                <p><strong>Adýnýz:</strong> <?php echo $_POST['name']; ?></p>
+                <p><strong>AdÄ±nÄ±z:</strong> <?php echo $_POST['name']; ?></p>
                 <p><strong>E-posta Adresiniz:</strong> <?php echo $_POST['email']; ?></p>
                 <p><strong>Konu:</strong> <?php echo $_POST['subject']; ?></p>
-                <p><strong>Mesajýnýz:</strong> <?php echo $_POST['message']; ?></p>
+                <p><strong>MesajÄ±nÄ±z:</strong> <?php echo $_POST['message']; ?></p>
             </div>
         </div>
     </div>
